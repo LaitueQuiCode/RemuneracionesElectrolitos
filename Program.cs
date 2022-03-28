@@ -34,6 +34,7 @@
                         break;
                     case 2:
                         // Ingreso de datos
+                        break;
                 }
                 
             }
