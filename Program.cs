@@ -5,7 +5,6 @@
 
         public static void Main(string[] args)
         {
-            empleados.Add(new Empleado(45, TipoEmpleado.ReponedorTienda, "Juanito"));
             while (true)
             {
                 Console.WriteLine("Elija una opcion:\n");
@@ -35,11 +34,6 @@
                         break;
                     case 2:
                         // Ingreso de datos
-                        Empleado empleadoDos = new Empleado(20, TipoEmpleado.VendedorTienda, "Pedro");
-                        Console.WriteLine("nombre: "+ empleadoDos.Nombre);
-                        empleadoDos.Nombre = "Antonio";
-                        Console.WriteLine("nombre modificado: " + empleadoDos.Nombre);
-                        break;
                 }
                 
             }
