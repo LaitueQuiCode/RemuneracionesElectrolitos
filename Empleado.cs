@@ -5,7 +5,8 @@
     {
         JefeTienda = 0,
         VendedorTienda = 1,
-        ReponedorTienda = 2
+        ReponedorTienda = 2,
+        SinRol = 3
     }
     public class Empleado
     {
@@ -60,7 +61,7 @@
                 if (Math.Abs(_horas) <= _horasMaximo)
                     return _sueldo[(int)_empleado] * _horas;
                 else
-                    return _horasExtra[(int)_empleado] * _horas;
+                    return (_sueldo[(int)_empleado] * _horasMaximo) + (_horasExtra[(int)_empleado] * (_horas - _horasMaximo));
             }
         }
     }
